@@ -6,11 +6,14 @@ install:
 install_eslint:
 		npm install --save-dev eslint eslint-config-airbnb-base eslint-plugin-babel babel-eslint eslint-plugin-import
 
-start:
-		npx babel-node src/bin/brain-games.js
+start-server:
+		nodemon --exec babel-node -- src/bin/launch.js
 
 publish:
 		npm publish --dry-run
 
 lint:
 		npx eslint src/.
+
+test:
+		npx jest

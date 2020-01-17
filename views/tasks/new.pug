@@ -1,0 +1,8 @@
+extends ../layouts/main.pug
+
+block content
+  .row.mt-3
+    .col-sm-6.mx.auto
+      h3.text.xs.center New task
+      form(action='/tasks' method='post')
+        include new_form.pug

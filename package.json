@@ -1,7 +1,7 @@
 {
   "name": "queens-task",
   "version": "1.0.0",
-  "description": "This is a visualisation attempt of a hexlet project",
+  "description": "Server running simple info collecting application",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -18,13 +18,14 @@
   "author": "Ivan Kozlov",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ivankl/are-queens-safe/issues"
+    "url": "https://github.com/ivankl/server-features-and-practices.git"
   },
-  "homepage": "https://github.com/ivankl/are-queens-safe#readme",
+  "homepage": "https://github.com/ivankl/server-features-and-practices#readme",
   "devDependencies": {
     "@babel/cli": "^7.7.7",
     "@babel/core": "^7.7.7",
     "@babel/node": "^7.7.7",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
     "@babel/preset-env": "^7.7.7",
     "@babel/register": "^7.7.7",
     "babel-eslint": "^10.0.3",
@@ -36,6 +37,11 @@
   },
   "dependencies": {
     "@hexlet/pairs": "^1.0.10",
-    "@hexlet/pairs-data": "^1.0.9"
+    "@hexlet/pairs-data": "^1.0.9",
+    "body-parser": "^1.19.0",
+    "bootstrap": "^4.4.1",
+    "express": "^4.17.1",
+    "pug": "^2.0.4",
+    "readline-sync": "^1.4.10"
   }
 }

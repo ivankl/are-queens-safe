@@ -1,0 +1,24 @@
+if Object.keys(errors).length > 0
+  .alert.alert-default
+    for key in Object.keys(errors)
+      div= errors[key]
+.row.form-group
+  .col-sm
+    label.col-form-label
+      | Date
+      sup *
+    input.form-control(name='date' value=form.date)
+.row.form-group
+  .col-sm
+    label.col-form-label
+      | User
+      sup *
+    input.form-control(name='user' value=form.user)
+.row.form-group
+  .col-sm
+    label.col-form-label
+      | Activities
+      sup *
+    textarea.form-control(rows=10 name='body')= form.body
+.form-group
+  button.btn.btn-primary.btn-block(type='submit') Save

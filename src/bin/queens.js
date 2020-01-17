@@ -1,3 +1,0 @@
-import areQueensSafe from '..';
-
-areQueensSafe();
